@@ -12,7 +12,24 @@ body{margin:0;font-family:Inter,ui-sans-serif,system-ui, -apple-system,"Segoe UI
 .site-header{border-bottom:1px solid rgba(255,255,255,0.04);position:sticky;top:0;background:linear-gradient(180deg, rgba(11,16,32,0.9), rgba(11,16,32,0.6));backdrop-filter:blur(6px);z-index:40}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;gap:12px;align-items:center}
-.avatar-placeholder{width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,var(--card),rgba(255,255,255,0.02));display:flex;align-items:center;justify-content:center;font-weight:bold;color:var(--muted);font-size:26px}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.1);
+  display: block;
+  position: relative;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  flex-shrink: 0;
+}
 .name-line h1{margin:0;font-size:18px}
 .name-line p{margin:0;color:var(--muted);font-size:13px}
 .nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
